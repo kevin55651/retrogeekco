@@ -1,0 +1,36 @@
+body
+{
+  background-image: url("imagenes/fondo2.jpg");
+  background-size: 100%, 100%;
+}
+
+@font-face
+{
+  font-family: "glasoor";
+  src: url("fuentes/4th february - Glasoor FF 4F.ttf");
+}
+
+*
+{
+  padding: 0px;
+  margin: 0px;
+}
+
+nav
+{
+  margin: auto;
+  width: 500px;
+  font-family: glasoor;
+
+}
+
+ul
+{
+  list-style: none;
+}
+
+.nav li a
+{
+    background-color: #FFC300;
+    text-decoration: none;
+}
