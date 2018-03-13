@@ -1,0 +1,36 @@
+@font-face
+{
+  font-family: "glasoor";
+  src: url("4th february - Glasoor FF 4F.ttf");
+}
+
+P
+{
+font-size: 35px;
+font-family : glasoor;
+font-weight : normal;
+}
+
+H1
+{
+font-size: 30px;
+font-family : glasoor;
+text-decoration : underline;
+text-align : center;
+background-color : Teal;
+}
+
+TD
+{
+font-size : 10pt;
+font-family : glasoor;
+text-align : center;
+background-color : 666666;
+}
+
+BODY
+{
+background-color : #006600;
+font-family : glasoor;
+color : black;
+}

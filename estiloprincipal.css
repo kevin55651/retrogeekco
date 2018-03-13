@@ -16,12 +16,12 @@ body
   margin: 0px;
 }
 
-nav
+.nav
 {
   margin: auto;
-  width: 500px;
+  width: 400px;
   font-family: glasoor;
-
+  font-size: 25px;
 }
 
 ul
@@ -33,4 +33,31 @@ ul
 {
     background-color: #FFC300;
     text-decoration: none;
+    padding: 10px 15px;
+    display: block;
 }
+
+.nav li a:hover
+{
+  background-color:  #dca600 ;
+}
+
+.nav > li
+{
+  float: left;
+}
+
+.nav li ul
+{
+  display:none;
+  position:fixed;
+  min-width: 150px;
+}
+
+/*> apunta a las etiquetas directas*/
+.nav li:hover > ul
+{
+  display: block;
+}
+
+/*ahora hacemos los submenus, todos los li dentro de ul que esten dentro de li*/
