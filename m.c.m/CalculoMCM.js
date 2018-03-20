@@ -23,7 +23,7 @@ class CalculoMCM
     {
       document.write(arreglo[x]  + ", ");
     }
-
+    
     var i = 2, j = 0, suma = 0, cont = 1, divisible = 0;
 
     if(cant > 0)
