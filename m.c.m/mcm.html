@@ -11,7 +11,18 @@
       <input type = "text" id = "cant" />
       <input type = "button" value = "ingresar numeros" id = "botons" />
     </p>
-    <script src = "Datos.js"></script>
+    <script>
+    var cantidad = document.getElementById("cant");
+    var botons = document.getElementById("botons");
+    botons.addEventListener("click", ingresarDatos);
+
+    function ingresarDatos(evento)
+    {
+      var cant = parseInt(cantidad.value);
+      var mcm = new CalculoMCM();
+      mcm.calcular(cant);
+    }
+    </script>
     <script src = "CalculoMCM.js"></script>
   </body>
 </html>

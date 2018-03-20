@@ -3,20 +3,25 @@ class CalculoMCM
   calcular(cant)
   {
     var arreglo = new Array(cant);
-    var a = new Array(cant);
     var x = 0;
+    var sum = 0;
 
     for(x=0; x < cant; x++)
     {
-      var sum = x + 1;
-      if(parseInt(arreglo[x] = prompt("digite el numero " + sum)) > 0)
-      {
-        a[x] = arreglo[x];
-        console.log(a[x]);
-      }else{
-        arreglo[x] = 0;
-        a[x] = arreglo[x];
-      }
+      sum++;
+      arreglo[x] = parseInt(prompt("digite el numero " + sum));
+    }
+
+    document.write("el m.c.m de: ");
+
+    if(cant == 0)
+    {
+      document.write("0 ");
+    }
+
+    for(x=0; x<cant; x++)
+    {
+      document.write(arreglo[x]  + ", ");
     }
 
     var i = 2, j = 0, suma = 0, cont = 1, divisible = 0;
@@ -40,7 +45,9 @@ class CalculoMCM
       if(divisible == 0)
       {
         i++;
-      }else{
+      }
+      else
+      {
         divisible = 0;
         cont = cont * i;
       }
@@ -56,12 +63,6 @@ class CalculoMCM
     cant = 0;
     cont = 0;
   }
-
-    document.write("el m.c.m de ");
-    for(x=0; x<cant; x++)
-    {
-      document.write(a[x]  + ", ");
-    }
-    document.write("es de: " + "<strong>" + cont + "</strong>");
+    document.write(" = " + "<strong>" + cont + "</strong>");
   }
 }
